@@ -1,0 +1,152 @@
+
+@font-face {
+    font-family: Fortnite;
+
+    src: url('fonts/Fortnite.ttf');
+}
+
+body
+{
+    background-image: linear-gradient(#4095DC, #1C3994); /* Standard syntax (must be last) */
+    background-attachment: fixed;  
+}
+
+.base{
+    color: #BCCBE2; 
+    font-family: 'Fortnite';   
+}
+
+.button-default{
+    background-color: #000095;
+    border-color: #0055FF;
+    color: #00D6FF;
+    border-style: solid;
+    border-width: 5px;
+    padding: 2px 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.gold-frame{
+    background-image: linear-gradient(#FFFF67, #FFFFD3);
+    padding: 5px;
+    width: 300px;
+}
+
+.button-gold{
+    width: 100%;
+    background-image: linear-gradient(#F0DC00, #F8EF5E);
+    color: #232B4D;
+    border-style: none;
+    padding: 2px 15px;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+.gold-reflection{
+   animation-name: gold-reflection-anim;
+   animation-duration: 50ms; 
+   position: absolute;
+   width: 10px;
+   height: 100px;
+}
+
+@keyframes gold-reflection-anim {
+    0%   {background-color: #FFFFD8; left:0px; top:0px;}
+    100% {background-color: #FFFFD8; left:200px; top:0px;}
+  }
+
+/* .button-gold div{
+    background: linear-gradient(#000016, #38426C);
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+} */
+
+.gray-frame{
+    background-image: linear-gradient(#B0D2FF,#E4EEFF);
+    padding: 5px;
+    width: 300px;
+}
+
+.button-gray{
+    width: 100%;
+    background-image: linear-gradient(#9CC2FF, #AFCFFF);   
+    color: #232B4D;
+    border-style: none;
+    padding: 2px 15px;
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+/* RARITIES COLORS */
+
+
+.common{
+  /* GRAY */
+}
+
+.uncommon{
+ /* Green */
+    background-image: linear-gradient(to right,#0B7039, #4B9A37); /* Standard syntax (must be last) */
+    background-attachment: fixed;  
+    color: #A1FE00;
+    font-family: sans-serif;
+    border-bottom-color: #59B701;
+    border-bottom-style: solid;
+}
+
+.rare{
+/* Blue */
+}
+
+.epic{
+/* Purple */
+}
+
+.legendary{
+/* Gold */
+}
+
+
+.item-info-header{
+    background-image: linear-gradient(to right, #0B703A, #4B9A36);  
+    background-attachment: local;
+    padding-left: 34%;
+    padding-top: 3%;
+    height: 100px;
+} 
+
+.item-info-item-title{
+    font-family: Fortnite;
+    color: #F3FFED;
+    font-size: xx-large;
+   text-shadow: 1px 1px 15px #52a72b, 1px 1px 15px #52a72b;
+}
+
+.item-info-picture{
+    position: absolute;
+    height: 197px;
+    width: 160px;
+    background-color: #00D6FF;
+    top: 3%;
+    left: 8%;
+}
+
+.item-info-body{
+    background-color: #1F519E;
+    color: #B8C8E0;
+    font-family: sans-serif;
+    position: inherit;
+    padding-left: 34%;
+    height: 160px;
+    padding-top: 10px;
+}
+
+.item-info-footer{
+    background-color: #122D89;
+    color: #FFFFFF;  
+}
+
+.footer-spacing{
+    padding-bottom: 3%;
+}
